@@ -1,0 +1,84 @@
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  width: 80vw;
+  height: 96vh;
+  margin: 0 auto;
+  background-color: bisque;
+}
+
+#slide1 {
+  background-color: blueviolet;
+  width: 100%;
+}
+
+#slide2 {
+  background-color: rgb(43, 150, 226);
+  width: 100%;
+}
+
+#slide3 {
+  background-color: rgb(197, 157, 234);
+  width: 100%;
+}
+
+#slide4 {
+  background-color: rgb(234, 98, 216);
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.slider {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0 auto;
+  overflow-x: scroll;
+  overflow-x: hidden;
+}
+
+.slide {
+  position: relative;
+  flex: 0 0 100%;
+  width: 100%;
+}
+
+.controls {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.controls>li {
+  width: 5%;
+  height: 5%;
+ 
+  z-index: 10;
+  margin-top: -5%;
+  
+}
+
+.controls>li>a {
+  display: block;
+  width: 5%;
+  height: 5%;
+  padding: 0;
+  border: 0.5em solid black;
+  border-radius: 100%;
+  box-sizing: border-box;
+ 
+}
+.controls>li>a:active{
+  border: 0.5em solid blue;
+}
+p{
+  margin-top: 51.6%;
+}
+
