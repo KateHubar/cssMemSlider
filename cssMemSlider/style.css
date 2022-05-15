@@ -9,28 +9,34 @@ main {
   background-color: bisque;
 }
 
-#slide1 {
+.slide_1 {
   background-color: blueviolet;
   width: 100%;
 }
 
-#slide2 {
+.slide_2 {
   background-color: rgb(43, 150, 226);
   width: 100%;
 }
 
-#slide3 {
+.slide_3 {
   background-color: rgb(197, 157, 234);
   width: 100%;
 }
 
-#slide4 {
+.slide_4 {
   background-color: rgb(234, 98, 216);
   width: 100%;
 }
 
 ul {
   list-style-type: none;
+}
+
+.view-port {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 .slider {
@@ -40,8 +46,7 @@ ul {
   height: 100%;
   padding: 0;
   margin: 0 auto;
-  overflow-x: scroll;
-  overflow-x: hidden;
+  transition: 0.3s;
 }
 
 .slide {
@@ -50,35 +55,65 @@ ul {
   width: 100%;
 }
 
-.controls {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.controls>li {
-  width: 5%;
-  height: 5%;
- 
-  z-index: 10;
-  margin-top: -5%;
-  
-}
-
-.controls>li>a {
-  display: block;
-  width: 5%;
-  height: 5%;
-  padding: 0;
-  border: 0.5em solid black;
-  border-radius: 100%;
-  box-sizing: border-box;
- 
-}
-.controls>li>a:active{
-  border: 0.5em solid blue;
-}
 p{
   margin-top: 51.6%;
 }
 
+.controls {
+  display: flex;
+  width: 100%;
+  padding: 0;
+  justify-content: flex-end;
+}
+
+.controls>li {
+  width: 2vw;
+  height: 2vw;
+  z-index: 10;
+  margin: -8vh 0.5vw 0;  
+}
+
+.controls > li > a {
+  display: block;
+  width: 2vw;
+  height: 2vw;
+  padding: 0;
+  border-radius: 100%;
+  box-sizing: border-box; 
+  background-color: rgb(115, 255, 0);
+}
+
+.controls > li+li > a {
+  background-color: grey;
+}
+
+#slide_1:target ~ .view-port > .slider {
+  transform: translateX(0%);
+}
+#slide_2:target ~ .view-port > .slider {
+  transform: translateX(-100%);
+}
+#slide_3:target ~ .view-port > .slider {
+  transform: translateX(-200%);
+}
+#slide_4:target ~ .view-port > .slider {
+  transform: translateX(-300%);
+}
+
+
+main>.anchor:target ~ .controls > li > a {
+  background-color: grey;
+}
+
+#slide_1:target ~ .controls #ctrl_slide_1 {
+  background-color: rgb(115, 255, 0);
+}
+#slide_2:target ~ .controls #ctrl_slide_2 {
+  background-color: rgb(115, 255, 0);
+}
+#slide_3:target ~ .controls #ctrl_slide_3 {
+  background-color: rgb(115, 255, 0);
+}
+#slide_4:target ~ .controls #ctrl_slide_4 {
+  background-color: rgb(115, 255, 0);
+}
