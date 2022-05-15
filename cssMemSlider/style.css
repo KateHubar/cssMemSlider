@@ -1,16 +1,20 @@
+@font-face {
+  font-family: "IstokWeb";
+  src: url("../cssMemSlider/assets/fonts/IstokWeb-Regular.ttf");
+}
 html {
   scroll-behavior: smooth;
 }
 
 main {
-  width: 80vw;
+  width: 60vw;
   height: 96vh;
   margin: 0 auto;
-  background-color: bisque;
+ /*  background-color: bisque; */
 }
 
 .slide_1 {
-  background-color: blueviolet;
+  background-color: rgb(246, 246, 156);
   width: 100%;
 }
 
@@ -20,12 +24,12 @@ main {
 }
 
 .slide_3 {
-  background-color: rgb(197, 157, 234);
+  background-color: rgb(121, 211, 118);
   width: 100%;
 }
 
 .slide_4 {
-  background-color: rgb(234, 98, 216);
+  background-color: rgb(159, 124, 181);
   width: 100%;
 }
 
@@ -53,24 +57,41 @@ ul {
   position: relative;
   flex: 0 0 100%;
   width: 100%;
+  
 }
-
+img{
+  height: 80vh;
+  margin-top: 2%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 p{
-  margin-top: 51.6%;
+  margin-top: 2%;
+  margin-left: 1%;
+  font-family: "IstokWeb";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 43px;
+  /* line-height: 8px;
+  text-align: center; */
+  
 }
 
 .controls {
   display: flex;
-  width: 100%;
+  width: 99%;
   padding: 0;
   justify-content: flex-end;
+  
 }
 
 .controls>li {
-  width: 2vw;
-  height: 2vw;
+  width: 1.5vw;
+  height: 1.5vw;
   z-index: 10;
-  margin: -8vh 0.5vw 0;  
+  margin: -11vh 0.5vw 0;  
+  
 }
 
 .controls > li > a {
@@ -80,11 +101,11 @@ p{
   padding: 0;
   border-radius: 100%;
   box-sizing: border-box; 
-  background-color: rgb(115, 255, 0);
+  background-color: whitesmoke;
 }
 
 .controls > li+li > a {
-  background-color: grey;
+  background-color: rgb(18, 18, 18);
 }
 
 #slide_1:target ~ .view-port > .slider {
@@ -102,18 +123,18 @@ p{
 
 
 main>.anchor:target ~ .controls > li > a {
-  background-color: grey;
+  background-color: rgb(18, 18, 18);
 }
 
 #slide_1:target ~ .controls #ctrl_slide_1 {
-  background-color: rgb(115, 255, 0);
+  background-color: white;
 }
 #slide_2:target ~ .controls #ctrl_slide_2 {
-  background-color: rgb(115, 255, 0);
+  background-color:white;
 }
 #slide_3:target ~ .controls #ctrl_slide_3 {
-  background-color: rgb(115, 255, 0);
+  background-color: white;
 }
 #slide_4:target ~ .controls #ctrl_slide_4 {
-  background-color: rgb(115, 255, 0);
+  background-color: white;
 }
