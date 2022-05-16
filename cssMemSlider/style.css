@@ -75,7 +75,7 @@ img{
   
 }
 p{
-  margin-top: 3vh;
+  margin-top: 3.4vh;
   margin-left: 1%;
   font-family: "IstokWeb";
   font-style:normal;
@@ -95,7 +95,7 @@ p{
   width: 3rem;
   height: 3rem;
   z-index: 10;
-  margin-top: -12.7vh;
+  margin-top: -14.5vh;
 }
 
 .controls > li > a {
@@ -165,7 +165,7 @@ main>.anchor:target ~ .controls > li > a > span {
   p{
     text-align: center;
     font-size: 1.6em;
-    margin-top: 8vh;
+    margin-top: 9vh;
     
   }
   .controls>li {
