@@ -163,7 +163,6 @@ main>.anchor:target ~ .controls > li > a > span {
   }
   
   p{
-    text-align: center;
     font-size: 1.6em;
     margin-top: 9vh;
     
