@@ -168,7 +168,7 @@ main>.anchor:target ~ .controls > li > a > span {
     
   }
   .controls>li {
-    margin: -15vh 0.5vw 0;  
+    margin: -17vh 0.5vw 0;  
   }
   .controls {
     justify-content: center;
